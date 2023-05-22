@@ -2,15 +2,13 @@ let express = require("express")
 let router = new express.Router();
 
 
-
 // now importing model of databse in index.js
 let Student = require("../models/students")
 
-
-
-// now async await based fnc in POST request
+// now POST request
 router.post("/students", async (req, res) => {
     try {
+        console.log(req.body)
         // now this user store all the data input in api call
         let user = new Student(req.body)
 
@@ -27,9 +25,13 @@ router.post("/students", async (req, res) => {
 
 
 
+
+
+
 // to fetch all data of students-api
 router.get("/students", async (req, res) => {
     try {
+        console.log(req.body)
         let studentData = await Student.find();
         res.send(studentData);
     } catch (error) {
