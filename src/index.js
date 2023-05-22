@@ -5,7 +5,7 @@ let app = express();
 
 // now imporing the code of database connection
 require("./db/conn")
-// now importing model of databse in index.js
+// now importing model 
 let Student = require("./models/students")
 
 
@@ -28,15 +28,3 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
     console.log(`running at port ${PORT}`)
 })
-
-
-
-
-
-
-
-
-
-
-
-

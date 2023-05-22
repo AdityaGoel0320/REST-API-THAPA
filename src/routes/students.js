@@ -6,31 +6,6 @@ let router = new express.Router();
 // now importing model of databse in index.js
 let Student = require("../models/students")
 
-// router.get("/thapa" , (req,res)=>{
-//     res.send("this is epress.router example page")
-// })
-
-
-
-// now this is for creating a new data 
-// but this is promise based
-// app.post("/students", (req, res) => {
-//     // now this user store all the data input in api call
-//     let user = new Student(req.body)
-
-//     // now to add this data into db
-//     user.save().then(() => {
-//         res.status(201).send(user)
-//         console.log(user)
-
-//     }).catch((error) => {
-//         res.status(400).send(error)
-//         console.log("error while posting the data" + error)
-//     })
-
-// })
-
-
 
 
 // now async await based fnc in POST request
