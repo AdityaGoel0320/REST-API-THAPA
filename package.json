@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "rundev": "nodemon src/index.js -e js,hbs,env"
+    "code": "nodemon src/index.js -e js,hbs,env"
   },
   "keywords": [],
   "author": "",
